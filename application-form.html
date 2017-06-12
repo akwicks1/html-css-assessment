@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+	<body>
+		<div class="container">
+			<h1>Thank you for your interest in Ubermelon</h1>
+				<p id="instructions"> Think you have what it takes to work at Ubermelon? Fill out the application below!  Be sure to include your first and last name, the position you're applying for and your salary requirement.<p>
+					<form action="/application-success" method="POST">
+						First Name: <input type="text" name="firstname" required><br>
+						Last Name: <input id="lastname" type="text" name="lastname" required><br>
+						Salary Requirement: <input type="number" name="salary" required><br>
+						Application for:
+							<select name="title">
+								<option value="softwareengineer">Software Engineer</option>
+								<option value="qaengineer">QA Engineer</option>
+								<option value="projectmanager">Project Manager</option>
+							</select><br>
+							<input type="submit" value="submit">
+					</form>
+		</div>
+	</body>
+</html>
